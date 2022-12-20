@@ -1,0 +1,19 @@
+CUDA_VISIABLE_DEVICES=1 nohup python run_mlm.py \
+    --model_name_or_path chinese-roberta-wwm-ext \
+    --train_file data/train.txt \
+    --validation_file data/eval.txt \
+    --per_device_train_batch_size 4 \
+    --per_device_eval_batch_size 4 \
+    --do_train \
+    --do_eval \
+    --weight_decay 0.01 \
+    --line_by_line \
+    --output_dir models \
+    --evaluation_strategy epoch \
+    --save_strategy epoch \
+    --metric_for_best_model eval_loss \
+    --save_total_limit 1 \
+    --load_best_model_at_end True \
+    --greater_is_better False \
+    --num_train_epochs 15 \
+    --max_seq_length 512 &
