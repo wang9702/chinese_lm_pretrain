@@ -10,6 +10,7 @@ ACL2020 Best Paper有一篇论文提名奖，《Don’t Stop Pretraining: Adapt 
 
 - https://github.com/zhusleep/pytorch_chinese_lm_pretrain
 - https://github.com/huggingface/transformers/blob/main/examples/pytorch/language-modeling
+- https://github.com/huggingface/transformers/tree/main/examples/research_projects/mlm_wwm
 - https://blog.csdn.net/weixin_44217936/article/details/125707581
 
 ### 使用
